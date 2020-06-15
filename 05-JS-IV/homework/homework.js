@@ -117,7 +117,9 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  usuarios.usuario.esPremium = true;
+  for(var i = 0; i < usuarios.length; i++){
+    usuarios[i].esPremium = true;
+  }
   return usuarios;
 }
 
@@ -128,7 +130,7 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-}
+ }
 
 function agregarMetodoCalculoDescuento(producto) {
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
